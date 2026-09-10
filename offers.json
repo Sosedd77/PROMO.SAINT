@@ -1,34 +1,30 @@
 [
   {
     "name": "Lucky Coin",
-    "bonus": "Вітальний бонус",
+    "bonus": "Бонус на перший депозит · 100% + 50 FS",
     "url": "https://click.mytraffgun.com/click?pid=838&offer_id=1173",
-    "logo": "",
-    "emoji": "🪙",
-    "badge": "NEW"
-  },
-  {
-    "name": "EpicStar",
-    "bonus": "Вітальний бонус",
-    "url": "https://click.mytraffgun.com/click?pid=838&offer_id=1142",
-    "logo": "",
-    "emoji": "⭐",
+    "logo": "luckycoin.png",
     "badge": "HOT"
   },
   {
-    "name": "CetBet",
-    "bonus": "Вітальний бонус",
+    "name": "EpicStar",
+    "bonus": "Вітальний пакет · 150% на перший депозит + 100 FS",
+    "url": "https://click.mytraffgun.com/click?pid=838&offer_id=1142",
+    "logo": "epicstar.png",
+    "badge": "HOT"
+  },
+  {
+    "name": "CATBET",
+    "bonus": "Вітальний бонус · До 100 000 ₴ + 250 FS · депозит від 200 ₴",
     "url": "https://click.mytraffgun.com/click?pid=838&offer_id=1082",
-    "logo": "",
-    "emoji": "🎰",
-    "badge": "NEW"
+    "logo": "catbet.png",
+    "badge": "HOT"
   },
   {
     "name": "GGBET",
     "bonus": "До 250 000 ₴ + 1000 FS",
     "url": "https://click.mytraffgun.com/click?pid=838&offer_id=724",
     "logo": "ggbet.png",
-    "emoji": "",
     "badge": "TOP"
   },
   {
@@ -36,31 +32,27 @@
     "bonus": "Казино до 390 000 ₴ + 600 FS · Спорт до 50 000 ₴",
     "url": "https://tinyurl.com/3utxmdjt/215/7?l=6&utm_source=TG&utm_campaign=PROMO_OT_SAINT&creative_type=link&creative_id=6",
     "logo": "allwin.png",
-    "emoji": "",
     "badge": "TOP"
   },
   {
     "name": "First Casino",
-    "bonus": "Бонус на перший депозит",
+    "bonus": "200 ₴ за верифікацію",
     "url": "https://1casinowin.com/auth/signup/?refcode=c64d49a3-1852-4856-97d8-5c0b5961f281",
     "logo": "first.png",
-    "emoji": "",
     "badge": "HOT"
   },
   {
     "name": "Shark Casino",
-    "bonus": "Вітальний бонус",
+    "bonus": "Вітальний пакет · 1 000 000 ₴ + 450% + 150 FS",
     "url": "https://trustrandomway.cc/uk?ref_code=37b3a8104ffb78a5",
-    "logo": "",
-    "emoji": "🦈",
-    "badge": "NEW"
+    "logo": "shark.png",
+    "badge": "HOT"
   },
   {
     "name": "CHC Casino",
-    "bonus": "Вітальний бонус",
+    "bonus": "Мінімальний депозит · від 50 ₴",
     "url": "https://chc4.casino/ua/r/ODk4MTc=",
-    "logo": "",
-    "emoji": "♠",
+    "logo": "chc.png",
     "badge": "NEW"
   },
   {
@@ -68,7 +60,6 @@
     "bonus": "Вітальний бонус",
     "url": "https://gtrk.link/?serial=61309479&creative_id=4175",
     "logo": "gorilla.png",
-    "emoji": "",
     "badge": "TOP"
   },
   {
@@ -76,7 +67,6 @@
     "bonus": "До 1000% + 250 FS",
     "url": "http://bit.ly/3GAblFf",
     "logo": "1win.png",
-    "emoji": "",
     "badge": "TOP"
   },
   {
@@ -84,7 +74,6 @@
     "bonus": "До 300 000 ₴ + 1000 FS",
     "url": "https://lnk.ua/WfnFeuqv2",
     "logo": "eurocasino.png",
-    "emoji": "",
     "badge": "HOT"
   },
   {
@@ -92,23 +81,20 @@
     "bonus": "50 000 ₴ + 200 FB + 100 FS",
     "url": "https://surl.li/tgodsl",
     "logo": "parik24.png",
-    "emoji": "",
     "badge": "HOT"
   },
   {
     "name": "RichTop Casino",
-    "bonus": "До +575% + 200 FS",
-    "url": "",
+    "bonus": "На перші 4 депозити · 600% + 500 FS",
+    "url": "https://rchcas1.com/?ref=44251",
     "logo": "richtop.png",
-    "emoji": "",
-    "badge": "SOON"
+    "badge": "HOT"
   },
   {
     "name": "BETLINE",
     "bonus": "Вітальний бонус",
-    "url": "",
+    "url": "https://betline.site/?a_aid=1129&modal=register",
     "logo": "betline.png",
-    "emoji": "",
     "badge": "SOON"
   }
 ]

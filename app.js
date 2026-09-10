@@ -5,7 +5,19 @@ document.addEventListener("DOMContentLoaded",()=>{
   const modal=$("#ageModal"); let confirmed=false;
   try{confirmed=sessionStorage.getItem("promoSaint21")==="yes"}catch(e){}
   if(modal){modal.hidden=confirmed;document.body.style.overflow=confirmed?"":"hidden"}
-  $("#ageYes")?.addEventListener("click",()=>{try{sessionStorage.setItem("promoSaint21","yes")}catch(e){};if(modal)modal.hidden=true;document.body.style.overflow=""});
+  $("#ageYes")?.addEventListener("click",()=>{try{sessionStorage.setItem("promoSaint21","yes")}catch(e){};if(modal)modal.hidden=true;document.body.style.overflow=""
+  // promo code copy buttons
+  $$(".copy-promo").forEach(btn=>btn.addEventListener("click",async()=>{
+    const code=btn.dataset.code||"";
+    if(!code) return;
+    try{await navigator.clipboard.writeText(code)}catch(e){
+      const ta=document.createElement("textarea");ta.value=code;document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove();
+    }
+    const old=btn.textContent;btn.textContent="Скопійовано ✓";btn.classList.add("copied");
+    setTimeout(()=>{btn.textContent=old;btn.classList.remove("copied")},1400);
+  }));
+
+});
   $("#ageNo")?.addEventListener("click",()=>{document.body.innerHTML='<main style="min-height:100vh;display:grid;place-items:center;background:#09090b;color:#fff;font-family:system-ui;text-align:center;padding:24px"><div><div style="width:80px;height:80px;border-radius:24px;display:grid;place-items:center;margin:0 auto 20px;background:linear-gradient(135deg,#7c5cff,#ff3158);font-weight:900;font-size:22px">21+</div><h1>Доступ обмежено</h1><p style="color:#7f7f8c">Сайт призначений лише для користувачів віком від 21 року.</p></div></main>'});
 
   // smooth cross-page transition fallback

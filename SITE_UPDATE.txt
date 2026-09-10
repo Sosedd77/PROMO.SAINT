@@ -1,10 +1,2 @@
-PROMO SAINT — версия с подключенным Telegram-ботом
-
-Бот: @PromoSaintBonus_Bot
-Канал: @PROMO_OT_SAINT
-
-Кнопка на странице tasks.html открывает:
-https://t.me/PromoSaintBonus_Bot?start=promo_saint
-
-Загрузи этот ZIP в Tiiny.host вместо предыдущей версии сайта.
-Сам бот уже работает отдельно на Railway.
+BETLINE link updated:
+https://betline.site/?a_aid=1129&modal=register

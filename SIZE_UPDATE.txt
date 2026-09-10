@@ -1,0 +1,2 @@
+All casino cards and logos were normalized to the same size.
+Offer cards and VIP cards now use consistent visual/logo/title/button heights.

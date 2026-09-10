@@ -157,3 +157,872 @@ body{padding-bottom:92px}
 @media(max-width:360px){.hero h1{font-size:36px}.brand-text{font-size:10px}.tg-chip{padding:8px}.stats strong{font-size:18px}}
 
 .tasks-wrap{max-width:1000px;margin:auto;padding:25px 30px 85px}.task-progress-card{padding:18px 20px;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid var(--line);margin-bottom:14px}.progress-top{display:flex;justify-content:space-between;color:#9494a2;font-size:11px}.progress-top strong{color:#fff}.progress-bar{height:7px;margin-top:13px;background:#171722;border-radius:99px;overflow:hidden}.progress-bar i{display:block;width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--accent2),var(--accent));transition:width .35s ease}.task-list{display:grid;gap:12px}.task-card{display:grid;grid-template-columns:54px 1fr auto;gap:18px;align-items:center;padding:20px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(31,32,49,.72),rgba(13,14,25,.88));transition:.25s}.task-card.done{border-color:rgba(75,227,138,.28);box-shadow:inset 0 0 0 1px rgba(75,227,138,.06)}.task-card.done .task-num{background:rgba(75,227,138,.12);color:#73eca4}.task-num{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:rgba(124,92,255,.10);color:#a396ff;font-weight:900;font-size:11px}.task-main h3{font-size:16px;margin:5px 0 7px}.task-main p{font-size:11px;line-height:1.6;color:#777783;margin:0}.task-kicker{font-size:8px;font-weight:900;letter-spacing:1.5px;color:#8f84ff}.task-btn{min-width:150px;text-align:center;text-decoration:none;color:#fff;border:1px solid var(--line);background:rgba(255,255,255,.045);border-radius:11px;padding:12px 14px;font-size:10px;font-weight:900}.unlock-card{margin-top:22px;padding:25px;border-radius:20px;border:1px solid rgba(124,92,255,.25);background:linear-gradient(120deg,rgba(124,92,255,.14),rgba(255,49,88,.08));display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:center}.unlock-icon{width:58px;height:58px;border-radius:17px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent2),var(--accent));font-size:24px}.unlock-copy h2{font-size:20px;margin:6px 0}.unlock-copy p{font-size:11px;line-height:1.6;color:#858591;margin:0}.unlock-btn{border:0;color:#fff;background:linear-gradient(135deg,var(--accent2),var(--accent));border-radius:12px;padding:14px 17px;font-size:11px;font-weight:900;cursor:pointer}.bot-hint{grid-column:2/-1;margin:0;color:#ff9bb0;font-size:10px}@media(max-width:700px){.tasks-wrap{padding:18px 16px 70px}.task-card{grid-template-columns:48px 1fr;padding:16px;gap:12px}.task-btn{grid-column:1/-1;width:100%;min-height:45px;display:grid;place-items:center}.unlock-card{grid-template-columns:55px 1fr;padding:18px}.unlock-btn{grid-column:1/-1;width:100%;min-height:47px}.bot-hint{grid-column:1/-1}.tasks-hero{padding-bottom:20px}}
+
+/* CHC artwork fit */
+.offer-card__visual img[src*="chc.png"]{
+  max-width: 94%;
+  max-height: 90px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+@media(max-width:650px){
+  .offer-card__visual img[src*="chc.png"]{
+    max-width: 96%;
+    max-height: 84px;
+  }
+}
+
+
+/* ===== All casino visuals in CHC-like premium banner style ===== */
+.offer-card{
+  overflow:hidden;
+}
+.offer-card__visual{
+  position:relative;
+  height:128px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:18px 20px;
+  border-radius:18px;
+  border:1px solid rgba(94,130,255,.22);
+  background:
+    radial-gradient(circle at 20% 25%, rgba(67,208,255,.22), transparent 35%),
+    radial-gradient(circle at 82% 15%, rgba(98,112,255,.16), transparent 28%),
+    linear-gradient(135deg, rgba(9,20,54,.96), rgba(7,12,34,.98) 55%, rgba(12,24,66,.96));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.06),
+    inset 0 -24px 60px rgba(0,0,0,.22),
+    0 10px 26px rgba(0,0,0,.28),
+    0 0 24px rgba(53,118,255,.10);
+}
+.offer-card__visual::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.06), transparent 38%),
+    linear-gradient(90deg, transparent, rgba(88,170,255,.07), transparent);
+  pointer-events:none;
+}
+.offer-card__visual::after{
+  content:"";
+  position:absolute;
+  left:14px;
+  right:14px;
+  bottom:10px;
+  height:18px;
+  border-radius:50%;
+  background:radial-gradient(ellipse at center, rgba(56,132,255,.17), transparent 70%);
+  filter:blur(10px);
+  pointer-events:none;
+}
+.offer-card__visual img{
+  position:relative;
+  z-index:1;
+  max-width:88%;
+  max-height:84px;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+  border-radius:10px;
+  filter:drop-shadow(0 0 10px rgba(73,157,255,.18));
+}
+.offer-card__body h3{
+  margin-top:2px;
+}
+.offer-card:hover .offer-card__visual{
+  transform:translateY(-2px);
+  transition:transform .25s ease, box-shadow .25s ease;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.08),
+    inset 0 -24px 60px rgba(0,0,0,.25),
+    0 16px 38px rgba(0,0,0,.34),
+    0 0 34px rgba(53,118,255,.16);
+}
+.offer-card[data-name*="shark"] .offer-card__visual,
+.offer-card[data-name*="catbet"] .offer-card__visual,
+.offer-card[data-name*="cetbet"] .offer-card__visual,
+.offer-card[data-name*="epicstar"] .offer-card__visual,
+.offer-card[data-name*="lucky coin"] .offer-card__visual,
+.offer-card[data-name*="chc"] .offer-card__visual,
+.offer-card[data-name*="richtop"] .offer-card__visual,
+.offer-card[data-name*="ggbet"] .offer-card__visual,
+.offer-card[data-name*="gorilla"] .offer-card__visual,
+.offer-card[data-name*="betline"] .offer-card__visual,
+.offer-card[data-name*="first"] .offer-card__visual,
+.offer-card[data-name*="1win"] .offer-card__visual{
+  background:
+    radial-gradient(circle at 18% 20%, rgba(53,226,255,.22), transparent 34%),
+    radial-gradient(circle at 88% 12%, rgba(69,104,255,.18), transparent 28%),
+    linear-gradient(135deg, rgba(8,17,50,.98), rgba(6,12,31,.99) 55%, rgba(10,21,58,.98));
+}
+.offer-card__visual img[src*="chc.png"]{
+  max-width:92%;
+  max-height:86px;
+}
+@media(max-width:650px){
+  .offer-card__visual{
+    height:118px;
+    padding:16px;
+    border-radius:16px;
+  }
+  .offer-card__visual img{
+    max-width:90%;
+    max-height:76px;
+  }
+}
+
+
+/* ===== Upgrade pack: uniform logos + richer premium cards + VIP block ===== */
+.offer-grid{
+  gap:18px;
+}
+.offer-card{
+  position:relative;
+  border:1px solid rgba(120,145,255,.16);
+  background:
+    linear-gradient(180deg, rgba(21,24,41,.95), rgba(11,13,25,.97));
+  box-shadow:
+    0 18px 46px rgba(0,0,0,.36),
+    0 0 0 1px rgba(255,255,255,.02) inset;
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.offer-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  padding:1px;
+  background:linear-gradient(135deg, rgba(88,155,255,.20), rgba(156,108,255,.08), rgba(255,255,255,.02));
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  pointer-events:none;
+}
+.offer-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(111,156,255,.28);
+  box-shadow:
+    0 24px 60px rgba(0,0,0,.46),
+    0 0 28px rgba(58,127,255,.10);
+}
+.offer-card__top{
+  margin-bottom:14px;
+}
+.offer-card__visual{
+  position:relative;
+  height:136px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:18px 22px;
+  border-radius:18px;
+  border:1px solid rgba(78,125,255,.20);
+  background:
+    radial-gradient(circle at 18% 20%, rgba(72,224,255,.20), transparent 34%),
+    radial-gradient(circle at 84% 18%, rgba(90,108,255,.18), transparent 28%),
+    linear-gradient(135deg, rgba(8,15,45,.98), rgba(6,11,29,.99) 58%, rgba(10,20,55,.98));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.07),
+    inset 0 -20px 50px rgba(0,0,0,.24),
+    0 12px 28px rgba(0,0,0,.26);
+}
+.offer-card__visual::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.07), transparent 34%),
+    linear-gradient(90deg, transparent, rgba(72,156,255,.06), transparent);
+  pointer-events:none;
+}
+.offer-card__visual::after{
+  content:"";
+  position:absolute;
+  left:14px;
+  right:14px;
+  bottom:10px;
+  height:20px;
+  border-radius:50%;
+  background:radial-gradient(ellipse at center, rgba(71,145,255,.18), transparent 72%);
+  filter:blur(10px);
+  pointer-events:none;
+}
+.offer-card__visual img{
+  position:relative;
+  z-index:1;
+  width:auto;
+  max-width:78%;
+  height:64px;
+  max-height:64px;
+  object-fit:contain;
+  border-radius:10px;
+  filter:drop-shadow(0 0 10px rgba(74,157,255,.18));
+}
+.offer-card__body h3{
+  font-size:18px;
+  letter-spacing:-.2px;
+}
+.offer-card__body p{
+  color:#b8bfd5;
+  line-height:1.6;
+  min-height:54px;
+}
+.card-cta{
+  min-height:48px;
+  background:linear-gradient(135deg, rgba(97,112,255,.96), rgba(255,78,142,.94));
+  box-shadow:0 12px 28px rgba(100,102,255,.18);
+}
+.card-cta:hover{
+  transform:translateY(-1px);
+  box-shadow:0 16px 34px rgba(100,102,255,.22);
+}
+.card-cta.disabled{
+  background:rgba(255,255,255,.06);
+  color:#a3a6b6;
+  box-shadow:none;
+}
+
+/* VIP block */
+.vip-section{
+  max-width:1200px;
+  margin:8px auto 24px;
+  padding:0 30px;
+}
+.vip-note{
+  color:#9aa3bf;
+  font-size:12px;
+  align-self:flex-end;
+}
+.vip-grid{
+  margin-top:22px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+.vip-card{
+  position:relative;
+  overflow:hidden;
+  padding:22px;
+  border-radius:24px;
+  border:1px solid rgba(120,145,255,.18);
+  background:
+    radial-gradient(circle at 12% 18%, rgba(80,217,255,.17), transparent 24%),
+    radial-gradient(circle at 88% 10%, rgba(146,110,255,.16), transparent 22%),
+    linear-gradient(145deg, rgba(15,18,36,.98), rgba(7,10,24,.99));
+  box-shadow:
+    0 24px 56px rgba(0,0,0,.38),
+    0 0 40px rgba(74,98,255,.07);
+}
+.vip-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.06), transparent 25%);
+  pointer-events:none;
+}
+.vip-card__top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:16px;
+}
+.vip-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:7px 12px;
+  border-radius:999px;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:1.2px;
+  color:#fff;
+  background:linear-gradient(135deg, #ffd56a, #ff8f52);
+  box-shadow:0 8px 18px rgba(255,173,74,.18);
+}
+.vip-card__visual{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:140px;
+  border-radius:20px;
+  border:1px solid rgba(81,122,255,.20);
+  background:
+    radial-gradient(circle at 15% 20%, rgba(68,225,255,.22), transparent 34%),
+    radial-gradient(circle at 88% 16%, rgba(92,110,255,.20), transparent 28%),
+    linear-gradient(135deg, rgba(10,18,50,.98), rgba(5,10,28,.99) 60%, rgba(12,23,61,.98));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.07),
+    inset 0 -24px 60px rgba(0,0,0,.24),
+    0 14px 32px rgba(0,0,0,.28);
+}
+.vip-card__visual img{
+  width:auto;
+  max-width:80%;
+  height:68px;
+  max-height:68px;
+  object-fit:contain;
+  filter:drop-shadow(0 0 10px rgba(76,152,255,.18));
+}
+.vip-card__body{
+  margin:18px 0 16px;
+}
+.vip-card__body h3{
+  margin:0 0 8px;
+  font-size:23px;
+  letter-spacing:-.4px;
+}
+.vip-card__body p{
+  margin:0;
+  color:#c6cce1;
+  line-height:1.6;
+}
+.vip-card__cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  min-height:50px;
+  width:100%;
+  padding:0 18px;
+  border-radius:14px;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:900;
+  color:#fff;
+  background:linear-gradient(135deg, rgba(99,113,255,.98), rgba(255,83,144,.95));
+  box-shadow:0 14px 30px rgba(97,103,255,.18);
+}
+.vip-card__cta.disabled{
+  background:rgba(255,255,255,.08);
+  color:#9ea6c4;
+  box-shadow:none;
+}
+
+/* Mobile */
+@media(max-width:900px){
+  .vip-grid{
+    grid-template-columns:1fr;
+  }
+}
+@media(max-width:650px){
+  .vip-section{
+    padding:0 16px;
+    margin-bottom:20px;
+  }
+  .vip-grid{
+    gap:14px;
+  }
+  .vip-card{
+    padding:18px;
+    border-radius:20px;
+  }
+  .vip-card__visual{
+    height:120px;
+    border-radius:16px;
+  }
+  .vip-card__visual img{
+    height:60px;
+    max-height:60px;
+    max-width:82%;
+  }
+  .vip-card__body h3{
+    font-size:20px;
+  }
+  .offer-card__visual{
+    height:122px;
+    padding:16px 18px;
+    border-radius:16px;
+  }
+  .offer-card__visual img{
+    height:58px;
+    max-height:58px;
+    max-width:82%;
+  }
+}
+
+
+/* === Uniform sizing for all casino cards/logos === */
+.offer-grid{
+  align-items:stretch;
+}
+.offer-card,
+.vip-card{
+  display:flex;
+  flex-direction:column;
+}
+.offer-card{
+  min-height: 390px !important;
+}
+.offer-card__visual{
+  height: 132px !important;
+  min-height: 132px !important;
+  max-height: 132px !important;
+}
+.offer-card__visual img{
+  width: 170px !important;
+  height: 62px !important;
+  max-width: 170px !important;
+  max-height: 62px !important;
+  object-fit: contain !important;
+}
+.offer-card .wordmark{
+  width: 170px !important;
+  height: 62px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  flex-direction:column !important;
+  gap: 4px !important;
+  text-align:center !important;
+}
+.offer-card .wordmark span{
+  font-size: 28px !important;
+  line-height: 1 !important;
+}
+.offer-card .wordmark strong{
+  font-size: 18px !important;
+  line-height: 1.1 !important;
+}
+.offer-card__body{
+  min-height: 110px !important;
+  display:flex !important;
+  flex-direction:column !important;
+}
+.offer-card__body h3{
+  min-height: 44px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+}
+.offer-card__body p{
+  min-height: 56px !important;
+  display:flex !important;
+  align-items:flex-start !important;
+  justify-content:center !important;
+  text-align:center !important;
+}
+.card-cta{
+  width: 100% !important;
+  min-height: 48px !important;
+  margin-top: auto !important;
+}
+
+/* VIP block uniform sizing */
+.vip-card{
+  min-height: 420px !important;
+}
+.vip-card__visual{
+  height: 140px !important;
+  min-height: 140px !important;
+  max-height: 140px !important;
+}
+.vip-card__visual img{
+  width: 180px !important;
+  height: 66px !important;
+  max-width: 180px !important;
+  max-height: 66px !important;
+  object-fit: contain !important;
+}
+.vip-card .wordmark{
+  width: 180px !important;
+  height: 66px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  flex-direction:column !important;
+  gap: 4px !important;
+  text-align:center !important;
+}
+.vip-card .wordmark span{
+  font-size: 30px !important;
+  line-height: 1 !important;
+}
+.vip-card .wordmark strong{
+  font-size: 20px !important;
+  line-height: 1.1 !important;
+}
+.vip-card__body{
+  min-height: 100px !important;
+}
+.vip-card__body h3{
+  min-height: 34px !important;
+}
+.vip-card__body p{
+  min-height: 52px !important;
+}
+.vip-card__cta{
+  width: 100% !important;
+  min-height: 50px !important;
+  margin-top: auto !important;
+}
+
+@media(max-width:650px){
+  .offer-card{
+    min-height: 360px !important;
+  }
+  .offer-card__visual{
+    height: 118px !important;
+    min-height: 118px !important;
+    max-height: 118px !important;
+  }
+  .offer-card__visual img{
+    width: 150px !important;
+    height: 56px !important;
+    max-width: 150px !important;
+    max-height: 56px !important;
+  }
+  .offer-card .wordmark{
+    width: 150px !important;
+    height: 56px !important;
+  }
+  .offer-card__body{
+    min-height: 104px !important;
+  }
+
+  .vip-card{
+    min-height: 390px !important;
+  }
+  .vip-card__visual{
+    height: 124px !important;
+    min-height: 124px !important;
+    max-height: 124px !important;
+  }
+  .vip-card__visual img{
+    width: 156px !important;
+    height: 58px !important;
+    max-width: 156px !important;
+    max-height: 58px !important;
+  }
+  .vip-card .wordmark{
+    width: 156px !important;
+    height: 58px !important;
+  }
+}
+
+
+/* FIRST Casino visual correction */
+.offer-card[data-name="first casino"] .offer-card__visual img{
+  width: 138px !important;
+  height: 50px !important;
+  max-width: 138px !important;
+  max-height: 50px !important;
+  object-fit: contain !important;
+}
+@media(max-width:650px){
+  .offer-card[data-name="first casino"] .offer-card__visual img{
+    width: 126px !important;
+    height: 46px !important;
+    max-width: 126px !important;
+    max-height: 46px !important;
+  }
+}
+
+
+/* ===== Bonuses page final grid fix ===== */
+.page-bonuses .offers-page{
+  max-width:1180px;
+  margin:0 auto;
+  padding:12px 30px 90px;
+}
+.page-bonuses .offer-grid{
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:18px !important;
+  align-items:stretch !important;
+}
+.page-bonuses .offer-card{
+  min-height:292px !important;
+  padding:16px !important;
+  border-radius:20px !important;
+  background:linear-gradient(180deg, rgba(18,20,40,.96), rgba(11,13,28,.98)) !important;
+  border:1px solid rgba(108,126,255,.18) !important;
+  box-shadow:0 18px 42px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.03) !important;
+}
+.page-bonuses .offer-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  pointer-events:none;
+  background:linear-gradient(180deg, rgba(255,255,255,.05), transparent 26%);
+}
+.page-bonuses .offer-card__top{
+  position:relative;
+  z-index:2;
+}
+.page-bonuses .badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:34px;
+  font-size:8px;
+  letter-spacing:1px;
+  font-weight:900;
+  padding:5px 8px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.03);
+}
+.page-bonuses .badge--top{
+  color:#ffdd72;
+  background:rgba(255,209,92,.10);
+  border-color:rgba(255,209,92,.22);
+}
+.page-bonuses .badge--hot{
+  color:#ff91ad;
+  background:rgba(255,82,123,.10);
+  border-color:rgba(255,82,123,.22);
+}
+.page-bonuses .badge--new{
+  color:#89efff;
+  background:rgba(63,223,255,.10);
+  border-color:rgba(63,223,255,.22);
+}
+.page-bonuses .badge--soon{
+  color:#b7b6ca;
+  background:rgba(255,255,255,.04);
+  border-color:rgba(255,255,255,.12);
+}
+.page-bonuses .age-mini{
+  font-size:9px;
+  color:#b9bbd1;
+  border:1px solid rgba(255,255,255,.10);
+  padding:4px 7px;
+  border-radius:999px;
+}
+.page-bonuses .offer-card__visual{
+  position:relative;
+  z-index:1;
+  height:96px !important;
+  min-height:96px !important;
+  max-height:96px !important;
+  margin:10px 0 12px !important;
+  padding:14px 18px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  border-radius:16px !important;
+  border:1px solid rgba(76,129,255,.24) !important;
+  background:
+    radial-gradient(circle at 18% 28%, rgba(72,220,255,.24), transparent 34%),
+    radial-gradient(circle at 88% 12%, rgba(108,120,255,.18), transparent 26%),
+    linear-gradient(135deg, rgba(9,24,59,.98), rgba(8,17,45,.98) 55%, rgba(10,25,62,.96)) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04), 0 10px 22px rgba(0,0,0,.22);
+}
+.page-bonuses .offer-card__visual img{
+  width:auto !important;
+  height:auto !important;
+  max-width:160px !important;
+  max-height:52px !important;
+  object-fit:contain !important;
+  filter:drop-shadow(0 4px 10px rgba(0,0,0,.28));
+}
+.page-bonuses .offer-card__body{
+  min-height:76px !important;
+  display:flex !important;
+  flex-direction:column !important;
+}
+.page-bonuses .offer-card__body h3{
+  margin:0 0 8px !important;
+  font-size:16px !important;
+  line-height:1.2 !important;
+  color:#fff !important;
+  text-align:left !important;
+  min-height:auto !important;
+}
+.page-bonuses .offer-card__body p{
+  margin:0 !important;
+  font-size:11px !important;
+  line-height:1.45 !important;
+  color:#9ea3c3 !important;
+  text-align:left !important;
+  min-height:auto !important;
+}
+.page-bonuses .card-cta{
+  margin-top:auto !important;
+  min-height:42px !important;
+  height:42px !important;
+  font-size:12px !important;
+  border-radius:12px !important;
+}
+.page-bonuses .empty-state{
+  margin-top:18px;
+  padding:24px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.08);
+  background:rgba(255,255,255,.03);
+  color:#9ea3c3;
+}
+.page-bonuses .empty-state strong{
+  display:block;
+  color:#fff;
+  margin-bottom:8px;
+}
+
+/* Logo-specific visual fit */
+.page-bonuses .offer-card__visual img[src*="luckycoin"]{max-width:150px !important; max-height:40px !important;}
+.page-bonuses .offer-card__visual img[src*="epicstar"]{max-width:156px !important; max-height:42px !important;}
+.page-bonuses .offer-card__visual img[src*="catbet"]{max-width:148px !important; max-height:38px !important;}
+.page-bonuses .offer-card__visual img[src*="ggbet"]{max-width:136px !important; max-height:36px !important;}
+.page-bonuses .offer-card__visual img[src*="allwin"]{max-width:128px !important; max-height:50px !important;}
+.page-bonuses .offer-card__visual img[src*="first"]{max-width:146px !important; max-height:44px !important;}
+.page-bonuses .offer-card__visual img[src*="shark"]{max-width:154px !important; max-height:44px !important;}
+.page-bonuses .offer-card__visual img[src*="chc"]{max-width:134px !important; max-height:60px !important; border-radius:12px;}
+.page-bonuses .offer-card__visual img[src*="gorilla"]{max-width:156px !important; max-height:42px !important;}
+.page-bonuses .offer-card__visual img[src*="1win"]{max-width:140px !important; max-height:42px !important;}
+.page-bonuses .offer-card__visual img[src*="eurocasino"]{max-width:128px !important; max-height:42px !important;}
+.page-bonuses .offer-card__visual img[src*="parik24"]{max-width:74px !important; max-height:74px !important;}
+.page-bonuses .offer-card__visual img[src*="richtop"]{max-width:146px !important; max-height:38px !important;}
+.page-bonuses .offer-card__visual img[src*="betline"]{max-width:150px !important; max-height:36px !important;}
+
+@media(max-width:1050px){
+  .page-bonuses .offer-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+}
+@media(max-width:650px){
+  .page-bonuses .offers-page{
+    padding:12px 16px 84px;
+  }
+  .page-bonuses .offer-grid{
+    grid-template-columns:1fr !important;
+    gap:14px !important;
+  }
+  .page-bonuses .offer-card{
+    min-height:276px !important;
+    padding:15px !important;
+  }
+  .page-bonuses .offer-card__visual{
+    height:90px !important;
+    min-height:90px !important;
+    max-height:90px !important;
+    padding:14px !important;
+  }
+  .page-bonuses .offer-card__visual img{
+    max-width:148px !important;
+    max-height:48px !important;
+  }
+}
+
+
+/* ===== Final card alignment + promo code support ===== */
+.page-bonuses .offer-grid{
+  grid-auto-rows:1fr !important;
+}
+.page-bonuses .offer-card{
+  height:100% !important;
+  min-height:304px !important;
+}
+.page-bonuses .offer-card__body{
+  flex:1 1 auto !important;
+  min-height:92px !important;
+}
+.page-bonuses .offer-card__body h3{
+  min-height:20px !important;
+}
+.page-bonuses .offer-card__body p{
+  min-height:48px !important;
+}
+.page-bonuses .card-cta{
+  margin-top:auto !important;
+}
+
+.promo-code-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin:10px 0 12px;
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px dashed rgba(124,92,255,.38);
+  background:rgba(124,92,255,.08);
+}
+.promo-code-row span{
+  font-size:9px;
+  color:#9ea3c3;
+  text-transform:uppercase;
+  letter-spacing:.8px;
+}
+.promo-code-row strong{
+  font-size:12px;
+  letter-spacing:.6px;
+  color:#fff;
+}
+.copy-promo{
+  border:0;
+  border-radius:9px;
+  padding:8px 10px;
+  cursor:pointer;
+  color:#fff;
+  background:linear-gradient(135deg,#765dff,#ef3f88);
+  font-size:10px;
+  font-weight:800;
+}
+.copy-promo.copied{
+  opacity:.78;
+}
+@media(max-width:650px){
+  .page-bonuses .offer-card{
+    min-height:290px !important;
+  }
+}
+
+
+/* ===== Smaller top text on homepage ===== */
+.page-home .hero h1,
+body:not(.page-bonuses):not(.page-tasks):not(.page-promos) .hero h1{
+  font-size:clamp(46px,6vw,82px) !important;
+  line-height:1.02 !important;
+  letter-spacing:-3px !important;
+  max-width:760px !important;
+}
+.page-home .hero p,
+body:not(.page-bonuses):not(.page-tasks):not(.page-promos) .hero p{
+  font-size:15px !important;
+  line-height:1.65 !important;
+  max-width:620px !important;
+}
+@media(max-width:650px){
+  .page-home .hero h1,
+  body:not(.page-bonuses):not(.page-tasks):not(.page-promos) .hero h1{
+    font-size:clamp(34px,9vw,44px) !important;
+    line-height:1.06 !important;
+    letter-spacing:-1.7px !important;
+  }
+  .page-home .hero p,
+  body:not(.page-bonuses):not(.page-tasks):not(.page-promos) .hero p{
+    font-size:13px !important;
+    line-height:1.6 !important;
+  }
+}
+
+
+/* ===== Homepage hero title slightly smaller ===== */
+.page-home .hero h1,
+body:not(.page-bonuses):not(.page-tasks):not(.page-promos) .hero h1{
+  font-size:clamp(40px,5.2vw,72px) !important;
+  line-height:1.03 !important;
+  letter-spacing:-2.5px !important;
+  max-width:720px !important;
+}
+@media(max-width:650px){
+  .page-home .hero h1,
+  body:not(.page-bonuses):not(.page-tasks):not(.page-promos) .hero h1{
+    font-size:clamp(30px,8vw,40px) !important;
+    line-height:1.06 !important;
+    letter-spacing:-1.3px !important;
+  }
+}
