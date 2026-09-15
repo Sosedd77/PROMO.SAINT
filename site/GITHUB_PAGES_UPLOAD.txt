@@ -1,0 +1,15 @@
+PROMO SAINT — GitHub Pages ready
+
+1. Open repository PROMO-SAINT.
+2. Upload ALL files/folders from this archive to the repository root.
+3. Replace old files when GitHub asks.
+4. Commit changes to main.
+5. Settings → Pages:
+   Source: Deploy from a branch
+   Branch: main
+   Folder: /(root)
+6. Site:
+   https://sosedd77.github.io/PROMO-SAINT/
+
+Promo-code UI support is included.
+When you provide an actual promo code, it can be shown as a separate block with a Copy button.

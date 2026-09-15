@@ -1,0 +1,33 @@
+{
+  "Lucky Coin": [
+    {
+      "code": "GOD150",
+      "title": "⚡ УДАР БОГІВ — 150 FS (Gates of Olympus)",
+      "details": "Мін. депозит 300 ₴ · Макс. бонус 1000 ₴ · Вейджер ×25 · Ставка 8"
+    },
+    {
+      "code": "GOLDENFISH",
+      "title": "🎣 ЗОЛОТИЙ УЛОВ — 100% + 100 FS (Big Bass Bonanza)",
+      "details": "Мін. депозит 300 ₴ · Макс. бонус 1000 ₴ · Вейджер ×25 · Ставка 4"
+    }
+  ],
+  "CATBET": [
+    {
+      "code": "CATR0AR6",
+      "title": "70 FS — Sweet Bonanza 2500",
+      "details": "Мін. депозит 200 ₴ · Вейджер ×15 · Ставка 2.00"
+    },
+    {
+      "code": "CATJ0Y6X",
+      "title": "70 FS — The Dog House",
+      "details": "Мін. депозит 200 ₴ · Вейджер ×10 · Ставка 2.00"
+    }
+  ],
+  "EpicStar": [
+    {
+      "code": "PROMO100",
+      "title": "100 FS у Gates of Olympus: Super Scatter",
+      "details": "Вводити тільки при реєстрації · Ставка 0.2 · Вейджер ×25"
+    }
+  ]
+}
