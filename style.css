@@ -1176,3 +1176,20 @@ body:not(.page-bonuses):not(.page-tasks):not(.page-promos) .hero h1{
 @media(max-width:650px){
   .real-promo-grid{grid-template-columns:1fr}
 }
+
+
+/* ===== No-code casinos keep the old compact card layout ===== */
+.page-bonuses .offer-card:not(:has(.casino-promo-list)){
+  min-height:292px !important;
+}
+.page-bonuses .offer-card:not(:has(.casino-promo-list)) .offer-card__body{
+  min-height:76px !important;
+}
+.page-bonuses .offer-card:has(.casino-promo-list){
+  min-height:auto !important;
+}
+@media(max-width:650px){
+  .page-bonuses .offer-card:not(:has(.casino-promo-list)){
+    min-height:276px !important;
+  }
+}
