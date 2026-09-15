@@ -1026,3 +1026,153 @@ body:not(.page-bonuses):not(.page-tasks):not(.page-promos) .hero h1{
     letter-spacing:-1.3px !important;
   }
 }
+
+/* ===== Final visual polish from screenshots ===== */
+@media(min-width:1051px){
+  .page-bonuses .offer-grid{
+    grid-template-columns:repeat(6,minmax(0,1fr)) !important;
+  }
+  .page-bonuses .offer-card{
+    grid-column:span 2;
+  }
+  .page-bonuses .offer-card:nth-last-child(2):nth-child(3n+1){
+    grid-column:2 / span 2;
+  }
+  .page-bonuses .offer-card:last-child:nth-child(3n+2){
+    grid-column:4 / span 2;
+  }
+}
+.page-bonuses .offer-card__visual img[src*="chc.png"]{
+  max-width:168px !important;
+  max-height:68px !important;
+}
+.page-bonuses .offer-card__visual img[src*="shark.png"]{
+  max-width:166px !important;
+  max-height:50px !important;
+}
+.page-bonuses .offer-card__visual img[src*="first.png"]{
+  max-width:154px !important;
+  max-height:46px !important;
+}
+
+/* ===== Casino order + registration promo codes ===== */
+.offer-card__labels{display:flex;align-items:center;gap:7px}
+.offer-order{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:38px;height:25px;padding:0 8px;border-radius:999px;
+  font-size:9px;font-weight:900;letter-spacing:.5px;color:#cbd3ff;
+  border:1px solid rgba(114,140,255,.22);
+  background:linear-gradient(135deg,rgba(90,111,255,.14),rgba(255,73,144,.08));
+}
+.casino-promo-code{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  min-height:58px;margin:12px 0;padding:10px 12px;border-radius:13px;
+  border:1px dashed rgba(126,103,255,.38);
+  background:linear-gradient(135deg,rgba(103,82,255,.10),rgba(255,71,137,.06));
+}
+.casino-promo-code>div{min-width:0}
+.casino-promo-code span{display:block;margin-bottom:4px;font-size:7px;font-weight:900;letter-spacing:1.1px;color:#858cae}
+.casino-promo-code strong{display:block;font-size:13px;letter-spacing:.5px;color:#fff;overflow-wrap:anywhere}
+.casino-promo-code--pending{opacity:.62}
+.copy-casino-code{
+  flex:0 0 auto;border:0;border-radius:9px;padding:9px 10px;cursor:pointer;
+  background:linear-gradient(135deg,#755cff,#ed4388);color:#fff;font-size:9px;font-weight:900
+}
+.page-bonuses .offer-card{min-height:355px!important}
+.page-bonuses .offer-card__body{min-height:78px!important}
+@media(max-width:650px){
+  .page-bonuses .offer-card{min-height:340px!important}
+  .casino-promo-code{min-height:55px}
+}
+
+
+/* ===== Multiple promo offers per casino ===== */
+.casino-promo-list{display:grid;gap:9px;margin:12px 0 14px}
+.casino-promo-offer{padding:10px 11px;border-radius:13px;border:1px solid rgba(119,105,255,.26);background:linear-gradient(135deg,rgba(103,82,255,.09),rgba(255,71,137,.045))}
+.casino-promo-offer__head{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center}
+.casino-promo-index{font-size:7px;font-weight:900;letter-spacing:1px;color:#838aa8}
+.casino-promo-offer__head strong{font-size:13px;color:#fff;letter-spacing:.5px;overflow-wrap:anywhere}
+.casino-promo-offer__title{margin-top:7px;font-size:10px;line-height:1.45;font-weight:800;color:#d8dcf0}
+.casino-promo-offer__details{margin-top:4px;font-size:9px;line-height:1.45;color:#8e95b0}
+.page-bonuses .offer-card{min-height:unset!important}
+.page-bonuses .offer-card__body{min-height:74px!important}
+@media(max-width:650px){
+  .casino-promo-offer__head{grid-template-columns:auto 1fr}
+  .casino-promo-offer__head .copy-casino-code{grid-column:1/-1;width:100%}
+}
+
+
+/* ===== Reliability fix: content must never disappear if JS is blocked ===== */
+.reveal{opacity:1!important;transform:none!important}
+.reveal.show{opacity:1!important;transform:none!important}
+
+
+/* ===== Real promo code cards ===== */
+.real-promo-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+  margin-top:22px;
+}
+.real-promo-card{
+  padding:18px;
+  border-radius:18px;
+  border:1px solid rgba(114,126,255,.18);
+  background:linear-gradient(180deg,rgba(20,22,42,.96),rgba(10,12,27,.98));
+  box-shadow:0 16px 38px rgba(0,0,0,.30);
+}
+.real-promo-card__top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+}
+.real-promo-card__brand{
+  font-size:11px;
+  font-weight:900;
+  color:#fff;
+  letter-spacing:.4px;
+}
+.real-promo-card__code{
+  margin:14px 0 10px;
+  padding:11px 12px;
+  border-radius:12px;
+  border:1px dashed rgba(126,103,255,.38);
+  background:rgba(119,94,255,.08);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+.real-promo-card__code strong{
+  font-size:15px;
+  color:#fff;
+  overflow-wrap:anywhere;
+}
+.real-promo-card h3{
+  margin:12px 0 8px;
+  font-size:16px;
+  line-height:1.35;
+}
+.real-promo-card ul{
+  margin:0;
+  padding-left:18px;
+  color:#9aa1bd;
+  font-size:11px;
+  line-height:1.65;
+}
+.real-promo-card .promo-note{
+  margin-top:10px;
+  color:#ffb5c6;
+  font-size:10px;
+  line-height:1.5;
+}
+.real-promo-card .card-cta{
+  margin-top:16px;
+}
+@media(max-width:950px){
+  .real-promo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:650px){
+  .real-promo-grid{grid-template-columns:1fr}
+}
