@@ -1193,3 +1193,221 @@ body:not(.page-bonuses):not(.page-tasks):not(.page-promos) .hero h1{
     min-height:276px !important;
   }
 }
+
+
+
+/* ===== 2026 casino artwork card backgrounds ===== */
+.offer-card{
+  isolation:isolate !important;
+  position:relative !important;
+  overflow:hidden !important;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(118,63,255,.14),transparent 38%),
+    linear-gradient(180deg,#111425 0%,#090b15 100%) !important;
+  border:1px solid rgba(196,83,255,.30) !important;
+  box-shadow:
+    0 18px 48px rgba(0,0,0,.44),
+    0 0 26px rgba(164,48,255,.08),
+    inset 0 1px 0 rgba(255,255,255,.05) !important;
+}
+.offer-card::after{
+  content:"" !important;
+  position:absolute !important;
+  inset:0 !important;
+  z-index:0 !important;
+  pointer-events:none !important;
+  background-image:
+    linear-gradient(180deg,rgba(5,7,16,.04) 0%,rgba(6,8,18,.22) 28%,rgba(7,8,18,.76) 65%,rgba(6,7,15,.98) 100%),
+    var(--card-bg) !important;
+  background-repeat:no-repeat,no-repeat !important;
+  background-size:100% 100%,var(--card-bg-size,72% auto) !important;
+  background-position:center,var(--card-bg-pos,center 18%) !important;
+  opacity:var(--card-bg-opacity,.26) !important;
+  transform:scale(1.025);
+  transition:transform .35s ease,opacity .35s ease !important;
+}
+.offer-card:hover::after{
+  transform:scale(1.065) !important;
+  opacity:var(--card-bg-hover-opacity,var(--card-bg-opacity,.26)) !important;
+}
+.offer-card::before{
+  z-index:3 !important;
+  opacity:1 !important;
+  background:linear-gradient(135deg,rgba(69,211,255,.32),rgba(194,45,255,.24) 46%,rgba(255,48,146,.34)) !important;
+}
+.offer-card > *{
+  position:relative !important;
+  z-index:2 !important;
+}
+.offer-card__top{
+  margin-bottom:8px !important;
+}
+.offer-card__visual{
+  height:172px !important;
+  min-height:172px !important;
+  max-height:172px !important;
+  margin:2px 0 10px !important;
+  padding:16px 18px !important;
+  border-radius:17px !important;
+  border:1px solid rgba(255,255,255,.12) !important;
+  background:
+    linear-gradient(180deg,rgba(9,11,24,.12),rgba(7,9,20,.46)) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.06),
+    0 12px 30px rgba(0,0,0,.22) !important;
+  backdrop-filter:blur(1.5px);
+}
+.offer-card__visual::before,
+.offer-card__visual::after{
+  opacity:.25 !important;
+}
+.offer-card__visual img{
+  max-width:76% !important;
+  max-height:72px !important;
+  filter:
+    drop-shadow(0 5px 12px rgba(0,0,0,.72))
+    drop-shadow(0 0 14px rgba(99,132,255,.20)) !important;
+}
+.offer-card__body{
+  min-height:unset !important;
+  padding:11px 12px !important;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:13px;
+  background:linear-gradient(180deg,rgba(8,10,20,.68),rgba(6,7,16,.84));
+  backdrop-filter:blur(9px);
+}
+.offer-card__body h3{
+  min-height:unset !important;
+  margin:0 0 5px !important;
+  color:#fff !important;
+  text-shadow:0 2px 10px rgba(0,0,0,.65);
+}
+.offer-card__body p{
+  min-height:unset !important;
+  color:#c2c7dc !important;
+}
+.casino-promo-list{
+  margin-top:10px !important;
+}
+.casino-promo-offer{
+  border-color:rgba(182,91,255,.30) !important;
+  background:linear-gradient(135deg,rgba(10,11,25,.82),rgba(23,12,33,.80)) !important;
+  backdrop-filter:blur(10px);
+}
+.casino-promo-offer__details{color:#b4bad0 !important}
+.card-cta{
+  margin-top:12px !important;
+  min-height:48px !important;
+  border:1px solid rgba(255,255,255,.15) !important;
+  background:linear-gradient(135deg,#7e31ff,#d82cff 54%,#ff2d92) !important;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.05) inset,
+    0 0 22px rgba(195,45,255,.28),
+    0 12px 30px rgba(0,0,0,.30) !important;
+}
+.card-cta:hover{
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.08) inset,
+    0 0 32px rgba(205,45,255,.42),
+    0 15px 34px rgba(0,0,0,.36) !important;
+}
+
+/* Uploaded creative artwork */
+.offer-card[data-name="lucky coin"]{
+  --card-bg:url("assets/card-bg/luckycoin.jpg");
+  --card-bg-size:cover;
+  --card-bg-pos:center 21%;
+  --card-bg-opacity:.82;
+  --card-bg-hover-opacity:.92;
+}
+.offer-card[data-name="epicstar"]{
+  --card-bg:url("assets/card-bg/epicstar.jpg");
+  --card-bg-size:cover;
+  --card-bg-pos:center 24%;
+  --card-bg-opacity:.82;
+  --card-bg-hover-opacity:.92;
+}
+.offer-card[data-name="catbet"]{
+  --card-bg:url("assets/card-bg/catbet.jpg");
+  --card-bg-size:cover;
+  --card-bg-pos:center 28%;
+  --card-bg-opacity:.80;
+  --card-bg-hover-opacity:.90;
+}
+.offer-card[data-name="first casino"]{
+  --card-bg:url("assets/card-bg/first.jpg");
+  --card-bg-size:cover;
+  --card-bg-pos:center 30%;
+  --card-bg-opacity:.82;
+  --card-bg-hover-opacity:.92;
+}
+.offer-card[data-name="shark casino"]{
+  --card-bg:url("assets/card-bg/shark.jpg");
+  --card-bg-size:cover;
+  --card-bg-pos:center 25%;
+  --card-bg-opacity:.82;
+  --card-bg-hover-opacity:.92;
+}
+.offer-card[data-name="richtop casino"]{
+  --card-bg:url("assets/card-bg/richtop.jpg");
+  --card-bg-size:cover;
+  --card-bg-pos:center 22%;
+  --card-bg-opacity:.82;
+  --card-bg-hover-opacity:.92;
+}
+
+/* Branded fallback backgrounds for cards without uploaded artwork */
+.offer-card[data-name="ggbet"]{--card-bg:url("assets/ggbet.png");--card-bg-size:72% auto;--card-bg-pos:center 28%}
+.offer-card[data-name="allwin"]{--card-bg:url("assets/allwin.png");--card-bg-size:72% auto;--card-bg-pos:center 28%}
+.offer-card[data-name="chc casino"]{--card-bg:url("assets/chc.png");--card-bg-size:72% auto;--card-bg-pos:center 28%}
+.offer-card[data-name="gorilla.ua"]{--card-bg:url("assets/gorilla.png");--card-bg-size:72% auto;--card-bg-pos:center 28%}
+.offer-card[data-name="1win"]{--card-bg:url("assets/1win.png");--card-bg-size:70% auto;--card-bg-pos:center 28%}
+.offer-card[data-name="eurocasino"]{--card-bg:url("assets/eurocasino.png");--card-bg-size:74% auto;--card-bg-pos:center 28%}
+.offer-card[data-name="parik24"]{--card-bg:url("assets/parik24.png");--card-bg-size:72% auto;--card-bg-pos:center 28%}
+.offer-card[data-name="betline"]{--card-bg:url("assets/betline.png");--card-bg-size:72% auto;--card-bg-pos:center 28%}
+
+/* Poster-backed cards: make logo plaque lighter so the art stays visible */
+.offer-card[data-name="lucky coin"] .offer-card__visual,
+.offer-card[data-name="epicstar"] .offer-card__visual,
+.offer-card[data-name="catbet"] .offer-card__visual,
+.offer-card[data-name="first casino"] .offer-card__visual,
+.offer-card[data-name="shark casino"] .offer-card__visual,
+.offer-card[data-name="richtop casino"] .offer-card__visual{
+  background:linear-gradient(180deg,rgba(5,7,16,.06),rgba(5,7,16,.30)) !important;
+  border-color:rgba(255,255,255,.16) !important;
+}
+
+/* Homepage top casino cards get the same richer presentation */
+.compact-grid .offer-card{
+  min-height:390px !important;
+}
+.compact-grid .offer-card__visual{
+  height:190px !important;
+  min-height:190px !important;
+  max-height:190px !important;
+}
+
+/* Mobile stays cinematic, but not oversized */
+@media(max-width:650px){
+  .page-bonuses .offer-card{
+    padding:14px !important;
+  }
+  .page-bonuses .offer-card__visual{
+    height:156px !important;
+    min-height:156px !important;
+    max-height:156px !important;
+    padding:14px !important;
+  }
+  .page-bonuses .offer-card__visual img{
+    max-width:72% !important;
+    max-height:64px !important;
+  }
+  .compact-grid .offer-card{
+    min-height:350px !important;
+  }
+  .compact-grid .offer-card__visual{
+    height:165px !important;
+    min-height:165px !important;
+    max-height:165px !important;
+  }
+}
